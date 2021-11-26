@@ -1,0 +1,270 @@
+.home {
+    background-image: url('assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+}
+
+.header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 96px;
+}
+
+.header > div:nth-child(1)
+{
+    margin-left:50px;
+    margin-top:62.5px;
+    padding-right: 10px;
+}
+
+.header > div {
+    font-size: 2em;
+    color:white;
+}
+
+.line:after {
+    content: "\a0";
+    display: block;
+    width: 23%;
+    position: absolute;
+    line-height: 5px;
+    z-index: 999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25); 
+    margin-top:80px;
+}
+
+/* Interactive elements */
+
+.container-flex {
+    margin-top:0rem !important;
+}
+
+.nav {
+    margin-top:39px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+
+.navbar_element {
+    backdrop-filter: blur(10px);
+    position: absolute;
+    height: 96px;
+    width: 830px;
+    background-color: rgb(255, 255, 255, 0.04);
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_element li a {
+    font-family: 'BarlowCondensed';
+}
+
+.navbar_element li a span {
+    font-weight: bold;
+}
+
+.navbar_element > * {
+    color:white;
+    z-index: 1000;
+    font-size: 16px;
+    padding: 3rem 0;
+    border-bottom: .25rem solid white;
+    border-color: rgb(255, 255, 255, 0);
+}
+
+.navbar_element {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar_element a {
+    text-decoration: none;
+    color:white;
+}
+
+.navbar_element > *:hover,
+.navbar_element > *:focus {
+    border-color: rgb(255, 255, 255, 0.25);
+}
+
+.navbar_element > .active {
+    border-color: rgb(255, 255, 255, 1 );
+}
+
+.content {
+    padding:10rem;
+    width: 1250px;
+    display:flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content > div:nth-child(1)
+{
+    width: 450px;
+}
+
+
+.crew {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:5rem;
+    gap:10rem;
+}
+
+.crew__description__title h4 {
+    color:white;
+    opacity: 0.25;
+}
+
+.crew__description {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 1.5rem;
+    margin-top:4rem;
+}
+
+.crew__image {
+    flex: 1;
+}
+
+.crew__image img {
+    height: 450px;
+}
+
+.slider-1 {
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+
+.crew__description__sliding__items {
+    margin-top:115px;
+}
+
+.navmobile {
+    display: none;
+}
+
+
+@media (max-width: 1084px)
+{
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .crew__image img {
+        height: 700px;
+    }
+
+    .slider-1 {
+        justify-content: center;
+    }
+
+    .crew {
+        flex-direction: column;
+        margin-top:0;
+        width: 80%;
+    }
+
+    .tablist__nav {
+        justify-items: center;
+        margin: auto;
+    }
+
+    .home {
+        background-image: url('assets/crew/background-crew-mobile.jpg');
+        background-size: cover;
+    }
+
+    .content {
+        padding: 7rem;
+    }
+
+   
+}
+
+/*
+Screens
+*/
+
+@media ( max-width: 800px ) {
+    .line {
+        display: none;
+    }
+
+    .navbar_element {
+        width:650px;
+    }
+
+}
+
+
+@media (max-width: 600px)
+{
+    * {
+        transition:all 1s ease;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navmobile {
+        display: block;
+        padding:3rem;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .crew__description {
+        order:2;
+    }
+
+    .crew__image {
+        order:1;
+        margin-top:2.5rem;
+    }
+
+    .crew__image img {
+        height: 350px;
+        border-bottom:1px solid rgb(255, 255, 255, 0.25);
+    }
+
+    .crew__image::after {
+        content: "";
+        position:absolute;
+        opacity:0.5;
+        width: 1000px;
+    }
+
+    .crew__description__title h4 {
+        font-size: 1.5rem;
+    }
+
+    .crew__description__name h3 {
+        font-size: 2rem;
+    }
+
+    .home {
+        background-image: url('assets/crew/background-crew-mobile.jpg');
+        background-size: cover;
+    }
+
+}
