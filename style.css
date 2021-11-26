@@ -1,5 +1,8 @@
+/*************/
+/* Design system */
+/* Colors schemes*/
+/*************/
 
-/* Colors schemes */
 .primary-color {
     color: #0B0D17;
 }
@@ -10,14 +13,6 @@
 
 .third-color {
     color: #FFFFFF;
-}
-
-body {
-    background-color: #0B0D17;
-}
-
-a {
-    cursor: none;
 }
 
 /* Fonts */
@@ -31,7 +26,21 @@ a {
     src: url('fonts/BarlowCondensed-Regular.ttf');
 }
 
+/*************/
+/* General */
+/*************/
+
+body {
+    background-color: #0B0D17;
+}
+
+a {
+    cursor: none;
+}
+
+/*******************/
 /* Utility classes */
+/*******************/
 
 .uppercase {
     text-transform: uppercase;
@@ -129,7 +138,10 @@ a {
     justify-content: space-between;
 }
 
+/************************/
 /* Interactive elements */
+/************************/
+
 
 .interactive-elements {
     display: flex;
